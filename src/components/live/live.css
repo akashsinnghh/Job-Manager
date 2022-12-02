@@ -1,0 +1,48 @@
+.main {
+    /* border: 1px solid black; 
+    padding: 1.5vw; */
+}
+
+.border {
+    border-color: #0000 !important;
+    border-style: solid !important;
+}
+
+.legend {
+    width:auto;
+     margin-bottom: 0px; 
+     
+     font-weight: 500; 
+     color: "#1f497d"
+}
+
+.search-icon {
+    height: 2vw;
+    width: 2vw;
+    margin-right: 0.5vw;
+}
+
+.text {
+    line-height: 1.5;
+    /* white-space: normal;
+    word-wrap: break-word; */
+    /* width: 50%;
+    overflow-wrap: normal; */
+    display: inline-block;
+    word-break: break-word;
+    width:500px;
+    /* word-wrap: break-word; */
+}
+.title-text{
+    display: flex;
+    justify-content: space-evenly;
+}
+.term-text{
+    
+    width: 8vw;
+    margin-left: -16vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 13vw;
+}
