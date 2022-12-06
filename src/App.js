@@ -5,12 +5,9 @@ import Form from './components/form/form';
 import Live from './components/live/live';
 import ColorSchemesExample from './components/navbar';
 
-let n = ""
-let v = ""
 class App extends Component {
   constructor(props) {
     super(props);
-    // this.child = React.createRef()
     this.state = {
       count: [],
       data: [],
@@ -29,28 +26,14 @@ class App extends Component {
 
   }
 
-
-  // getData(e,clear) {
-  //   this.setState({data: e})
-  //   if(clear) {
-  //     this.setState({name: ""})
-  //     this.setState({value: ""})
-  //   }
-  // }
-
   getFormData(e, i) {
-    // console.log("form data")
-    // console.log("form data===",e)
     this.setState({
       formData: e
     })
-    // console.log("i----------------->",i)
     this.setState({ index: i })
   }
 
   delFormData() {
-    // console.log("delete------>",this.state.index)
-    // this.setState({data: this.state.data.filter((item) => (this.state.index) !== item.id)}) 
     this.setState({
       formData: null
     })
@@ -67,13 +50,8 @@ class App extends Component {
     this.setState({ data: [...this.state.data, e] })
   }
 
-
-
-
   render() {
-    // console.log("count", this.state.data)
-    // console.log("data", this.state.formData)
-    // console.log("data from app js file", this.state.data)
+    
     return (
       <div className="App">
         <ColorSchemesExample />
@@ -93,7 +71,6 @@ class App extends Component {
                     formData={this.state.formData}
                     ref={instance => { this.child = instance; }}
                     liveData={this.getLiveData}
-                    clearLiveData={this.clearLiveData}
                     delFormData={this.delFormData} />
                 </div>
                 <div className='btn'>
@@ -116,7 +93,7 @@ class App extends Component {
           </div>
 
           <div className='live-preview'>
-            <Live data={this.state.formData} name={this.state.name} value={this.state.value} title={this.state.title} />
+            <Live data={this.state.formData} name={this.state.name} value={this.state.value}/>
 
           </div>
         </div>

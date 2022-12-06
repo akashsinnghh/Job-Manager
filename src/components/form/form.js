@@ -87,9 +87,6 @@ class Form extends Component {
       selectTerm: "", selectTermStatus: false,
     })
     this.setState({ propsData: null })
-    // console.log("func------>", this.state.propsData)
-    // this.props.formData=[]
-    // this.props.clearLiveData()
     this.props.delFormData()
   }
 
@@ -124,7 +121,6 @@ class Form extends Component {
     }
 
     this.props.addItem(job)
-    // console.log("j----------------->",job)
     this.resetState()
   }
 
@@ -132,8 +128,7 @@ class Form extends Component {
 
 
   render() {
-    console.log("titsbara", this.props.formData)
-    // console.log("tite------>", this.state.location)
+    
     return (
       <div className='main'>
         <div className="form">

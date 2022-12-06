@@ -4,16 +4,12 @@ import React from 'react';
 function Button(props) {
    
     function getJob(i){
-        // console.log("entered",i)
         let data=props.data[i]
-        // console.log("d--------->",d)
         props.getData(data,i)
         
     }
 
     function handleClick(e){
-        // console.log("e---------",e)
-        // console.log("in delete")
         props.delFormData()
     }
     const mystyle = {
